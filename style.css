@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* overflow-y: hidden; */
+}
+
+.gap {
+    width: 100%;
+    height: 40px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+header {
+    display: flex;
+    background-color: #F5F7FA;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    color: #18191F;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #4CAF4F;
+}
+
+a.active {
+    font-weight: 600;
+    color: #4CAF4F;
+}
+
+/* Humberger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;    
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: -15px;
+    top: -5px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: #4CAF4F;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+/* Humberger Menu Animation */
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(38deg);
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: r
+    otate(38deg);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-38deg);
+    -webkit-transform: rotate(-38deg);
+    -moz-transform: rotate(-38deg);
+    -ms-transform: rotate(-38deg);
+    -o-transform: rotate(-38deg);
+}
+
+.hero {
+    width: 100%;
+    background-color: #F5F7FA;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.hero-content {
+    flex: 1.5;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #4CAF4F;
+}
+
+.hero-content p{
+    color: #717171;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    width: 130px;
+    height: 45px;
+    background-color: #4CAF4F;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    color: #F5F7FA;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #1d6720;
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+
+.hero-image img{
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+
+@media screen and (max-width: 768px) {
+    .gap {
+        height: 30px;
+    }
+
+    header {
+        padding: 20px 40px;
+    }
+    header nav {
+        width: 60%;
+    }
+
+    .hero-content {
+        padding-left: 40px;
+    }
+
+    .hero-image {
+        padding-right: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+        max-width: 400px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .hero-content button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 576px) {
+    .gap {
+        height: 20px;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+    header nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul{
+        display: absolute;
+        flex-direction: column;
+        background: #F5F7FA;
+        height: 400px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 70px 0 20px;
+        transform: translateY(-100%);
+        -webkit-transform: t;
+        -moz-transform: t;
+        -ms-transform: t;
+        -o-transform: t;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+}
+
+    header nav ul.slide {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+    
+    .hero  {
+        padding: 30px 0;
+    }
+
+    .hero-content {
+        padding: 0 30px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-content h1 {
+        text-align: center;
+    }
+
+    .hero-content p {
+        text-align: center;
+    }
+
+    .hero-content button {
+        width: 90px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    .hero-image {
+        padding: 0 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
