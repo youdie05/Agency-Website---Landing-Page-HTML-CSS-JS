@@ -20,6 +20,8 @@ body {
     width: 150px;
 }
 
+/* ============================   Header   ============================ */
+
 header {
     display: flex;
     background-color: #F5F7FA;
@@ -123,6 +125,11 @@ a.active {
     -o-transform: rotate(-38deg);
 }
 
+/* ============================  End Header   ============================ */
+
+
+/* ============================   Hero   ============================ */
+
 .hero {
     width: 100%;
     background-color: #F5F7FA;
@@ -191,9 +198,259 @@ a.active {
     width: 500px;
 }
 
+/* ============================  End Hero   ============================ */
 
 
 
+/* ============================   Clients   ============================ */
+
+.clients-container {
+    width: 100%;
+}
+
+.clients-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.clients-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+
+.clients-logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 50px 20px;
+}
+
+.clients-logo img {
+    width: 50px;
+}
+
+/* ============================   End Clients   ============================ */
+
+/* ============================   Community   ============================ */
+
+.community-container {
+    width: 100%;
+}
+
+.community-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.community-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+
+.community-list-items {
+    display: flex;
+    padding: 50px 50px 30px;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-item {
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+.title-item {
+    text-align: center;
+    max-width: 240px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.desc-item {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 240px;
+    color: #717171;
+}
+
+
+
+/* ============================   End Community   ============================ */
+
+
+
+
+/* ============================   Article   ============================ */
+
+
+.article-container {
+    display: flex;
+    padding: 50px 50px;
+    justify-content: space-evenly;
+}
+
+.img-article img {
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.content-article h2 {
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 600px;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+}
+
+.content-article p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+    max-width: 680px;
+    margin-bottom: 20px;
+}
+
+.content-article button {
+    width: 150px;
+    height: 50px;
+    background-color: #4CAF4F;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-article button:hover {
+    background-color: #1d6720;
+}
+
+
+
+/* ============================   End Article   ============================ */
+
+
+/* ============================   Stats   ============================ */
+
+.stats-container {
+    display: flex;
+    background-color: #F5F7FA;
+    padding: 50px 50px 40px;
+    justify-content: space-evenly;
+}
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.stats-info h2 {
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 408px;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+}
+
+.stats-info h2 span {
+    color: #4CAF4F;
+}
+
+.stats-info p {
+    font-size: 16px;
+    color: #18191F;
+    font-weight: 400;
+}
+
+.list-items-stats {
+    display: flex;
+    max-width: 40%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item-stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 255px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.item-stats img {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.count-stats h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin-bottom: 5px;
+}
+
+.count-stats p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
+}
+/* ============================   End Stats   ============================ */
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #4CAF4F;
+    color: #fff;
+    font-weight: 500;
+}
 
 
 
@@ -213,12 +470,21 @@ a.active {
         height: 30px;
     }
 
+
+/* ============================   Header Tablet   ============================ */
+
+
     header {
         padding: 20px 40px;
     }
     header nav {
         width: 60%;
     }
+
+/* ============================  End Header Tablet   ============================ */
+
+
+/* ============================   Hero Tablet   ============================ */
 
     .hero-content {
         padding-left: 40px;
@@ -250,14 +516,97 @@ a.active {
         font-weight: 300;
         letter-spacing: 1px;
     }
+
+/* ============================   End Hero Tablet   ============================ */
+
+/* ============================   Clients Tablet   ============================ */
+
+    .clients-title h2 {
+        font-size: 28px;
+    }
+
+    .clients-title p {
+        font-size: 14px;
+    }
+
+    .clients-logo {
+        padding: 20px 40px 10px;
+    }
+
+/* ============================   End Clients Tablet   ============================ */
+
+/* ============================   Communty Tablet   ============================ */
+
+    .community-title h2 {
+        font-size: 28px;
+    }
+
+    .community-title p {
+        font-size: 14px;
+    }
+
+    .community-list-items {
+        padding: 30px 40px 20px;
+    }
+
+    .title-item {
+        font-size: 22px;
+        font-weight: 600;
+        max-width: 190px;
+    }
+
+    .desc-item {
+        font-size: 13px;
+        max-width: 200px;
+    }
+
+/* ============================   End Community Tablet   ============================ */
+
+/* ============================   Article Tablet   ============================ */
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .img-article img {
+        width: 400px;
+    }
+
+    .content-article h2 {
+        font-size: 30px;
+    }
+
+    .content-article p {
+        font-size: 14px;
+    }
+    
+    .content-article button {
+        width: 130px;
+        height: 40px;
+    }
+    
+
+/* ============================   End Article Tablet   ============================ */
+
+
+/* ============================   Stats Tablet   ============================ */
+
+/* tidak ada yang di ubah */
+
+/* ============================   End Stats Tablet   ============================ */
+
+
 }
 
 /* ukuran mobile */
 
 @media screen and (max-width: 576px) {
     .gap {
-        height: 20px;
+        height: 30px;
     }
+/* ============================   Header Mobile   ============================ */
 
     header {
         padding: 20px 30px;
@@ -295,6 +644,12 @@ a.active {
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
 }
+
+/* ============================  End Header Mobile   ============================ */
+
+
+/* ============================   Hero Mobile   ============================ */
+
 
     .menu-toggle {
         display: flex;
@@ -334,6 +689,130 @@ a.active {
         justify-content: center;
         align-items: center;
     }
+
+/* ============================   End Hero Mobile   ============================ */
+
+/* ============================   Clients Mobile   ============================ */
+
+    .clients-title h2 {
+        font-size: 26px;
+    }
+
+    .clients-title p {
+        font-size: 13px;
+    }
+
+    .clients-logo {
+        flex-wrap: wrap;
+    }
     
+    .clients-logo img {
+        width: 110px;
+        margin: 0 5px;
+    }
+
+
+/* ============================   End Clients Mobile   ============================ */
+
+/* ============================   Community Mobile   ============================ */
+
+    .community-title h2 {
+        font-size: 26px;
+        max-width: 400px;
+    }
+
+    .community-title p {
+        font-size: 13px;
+    }
+
+    .community-list-items {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-bottom: 30px;
+    }
+
+    .logo-item {
+        width: 85px;
+    }
+
+    .title-item {
+        max-width: 300px;
+    }
+
+    .desc-item {
+        max-width: 400px;
+        font-size: 14px;
+    }
+
+/* ============================   End Community Mobile   ============================ */
+
+
+
+/* ============================   Article Mobile   ============================ */
+
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px 20px;
+    }
+
+    .img-article img {
+        width: 380px;
+    }
+
+    .content-article h2 {
+        font-size: 26px;
+    }
+
+    .content-article p {
+        font-size: 13px;
+    }
+
+    .content-article button {
+        width: 120px;
+        height: 40px;
+    }
+
+
+/* ============================   End Article Mobile   ============================ */
+
+
+/* ============================   Stast Mobile   ============================ */
+
+.stats-container {
+    flex-direction: column;
+}
+
+.stats-info {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.stats-info h2 {
+    text-align: center;
+    font-size: 30px;
+    max-width: 340px;
+}
+
+.stats-info p {
+    font-size: 14px;
+    text-align: end;
+}
+
+.list-items-stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.item-stats {
+    width: 220px;
+}
+
+/* ============================   End Stats Mobile   ============================ */
+
 }
 
